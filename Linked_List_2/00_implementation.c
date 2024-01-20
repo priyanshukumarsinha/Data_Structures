@@ -2,6 +2,7 @@
 #include "02_operations.c"
 #include "07_menu.c"
 
+
 int main(){
     while(1){
         int ch = menu();
@@ -16,18 +17,26 @@ int main(){
         case 3:
             insertAtPos();
             break;
-        //     deleteNode();
-        //     break;
         case 4:
+            deleteFirstNode();
+            break;
+        case 5:
+            deleteLastNode();
+            break;
+        case 6:
+            deleteNode();
+            break;
+        case 7:
             viewList();
             break;
-        case 5: 
+        case 8: 
             exit(0);
         default:
             printf("\nInvalid Entry!\n");
             continue;
         }
     }
+
 
     return 0;
 }

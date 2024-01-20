@@ -3,15 +3,17 @@
 
 // There are three main Linked List Operations:
 // 1. Insertion
+    #include "04_insertNode.c"
         // i. At the End
-            #include "04_insertNode.c"
-
+            void insertAtEnd();
         // ii. At the Beginning
+            void insertAtBeginning();
         // iii. After a Node
+            void insertAtPos();
 
 // 2. Deletion
+    #include "05_deleteNode.c"
         // i. Last Node
-            #include "05_deleteNode.c"
         // ii. First Node
         // iii. Particular Node
 

@@ -22,6 +22,7 @@ void insertAtEnd(){
     end++;
 }
 
+// Insertion at the beginning
 void insertAtBeginning(){
     struct Node *temp;
     temp = createNode();
@@ -39,6 +40,8 @@ void insertAtBeginning(){
 
 }
 
+
+// Insert at a Particular Position 
 void insertAtPos(){
     struct Node *temp, *t, *r;
     temp = createNode();
@@ -52,7 +55,13 @@ void insertAtPos(){
 
     t=head;
     while(pos>=0||pos<=end){
-        if(pos-1==0){
+        if (pos == 0)
+        {
+            temp->link = head;
+            head = temp;
+            break;
+        }
+        else if(pos-1==0){
             r = t->link;
             temp->link=r;
             t->link=temp;
